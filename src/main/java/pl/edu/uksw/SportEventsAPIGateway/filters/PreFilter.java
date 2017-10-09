@@ -16,16 +16,19 @@ public class PreFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
+        log.info(String.format("filterType method").toString());
         return "pre";
     }
 
     @Override
     public int filterOrder() {
+        log.info(String.format("filterOrder method").toString());
         return 1;
     }
 
     @Override
     public boolean shouldFilter() {
+        log.info(String.format("shouldFilter method").toString());
         return true;
     }
 
